@@ -10,7 +10,8 @@ call method for topBottom
 
 public class Hourglass {
 	public static void main(String[] args) {
-		//basic layout of hourglass
+		//basic layout of hour glass
+		
 		topBottom();
 		//topHourglass();
 		System.out.println("    ||");
@@ -41,7 +42,7 @@ public class Hourglass {
 
 	/* public static void bottomHourglass() {
 		for (int i = 1; i <= 4; i++);
-			for (int j = 1; j <= 4 - 1; j++);
+			for (int  Sj = 1; j <= 4 - 1; j++);
 			System.out.println("\\" + j + "/");
 	}
 	*/
