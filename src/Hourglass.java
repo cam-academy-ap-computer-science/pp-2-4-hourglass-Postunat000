@@ -13,9 +13,9 @@ public class Hourglass {
 		//basic layout of hour glass
 		
 		topBottom();
-		//topHourglass();
-		System.out.println("    ||");
-		//bottomHourglass();
+		topHourglass();
+		System.out.println("     ||");
+		bottomHourglass();
 		topBottom();
 	}
 	
@@ -25,25 +25,58 @@ public class Hourglass {
 			System.out.print("\"");
 		}
 		System.out.print("|");
+		System.out.println();
 	}
 
 	public static void topHourglass() {
+		//First come up with a loop for the spaces before the body
+		//This loop determines how many lines there are
 		for (int i = 1; i <= 4; i++) {
+			//This loop defines the loop for spaces before the body
+			for (int j = 1; j <= i; j++) {
 			System.out.print(" ");
+			}
+			System.out.print("\\");
+			topInside();
 		}
-		System.out.print("\\");
-		for (int j = i; j <= 4; j++) {
-			for (int k = 8; k >= 2; k--) {
-			System.out.print(":");
+	}
+	
+	public static void bottomHourglass() {
+		//This for loop determines how many lines there are
+		for (int i = 4; i >= 1; i--) {
+			//This loop describes the number of spaces before the body
+			for (int j = 4; j >= 1; j--) { //straight line if j <= 4 or j >= 1
+				System.out.print(" ");
 			}
 			System.out.print("/");
-		}	
+			System.out.println();
+		}
 	}
-
-	/* public static void bottomHourglass() {
-		for (int i = 1; i <= 4; i++);
-			for (int  Sj = 1; j <= 4 - 1; j++);
-			System.out.println("\\" + j + "/");
+	
+	public static void topInside() {
+		for (int i = 1; i <= 8; i++) { //The i <= determines the number of colons
+			for (int j = 8; j >= 2; j--);
+			System.out.print(":");
+		}
+		System.out.println("/");
 	}
-	*/
 }
+
+/*	public static void topInside() {
+		for (int i = 1; i <= 8; i++) {
+			for (int j = 8; j >= 2; j--);
+			System.out.print(":");
+		}
+		System.out.println("/");
+	}
+	
+Result is
+ \::::::::/
+  \::::::::/
+   \::::::::/
+    \::::::::/
+	 */
+		
+		
+		
+		
