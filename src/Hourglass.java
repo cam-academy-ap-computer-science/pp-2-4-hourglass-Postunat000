@@ -1,3 +1,20 @@
+/* Grading - Sarah Gilliam
+
+10 pts - Correct Output (must compile and run)
+3 pts - Proper Use of Static Methods
+3 pts - Proper Use of for loops
+3 pts - Pseudocode
+2 pts - Comments
+2 pts - Consistent Layout and Style following Style Guidelines
+2 pts - Proper Use of at least one Class Constant
+The idea behind the constant is that you can change the value in one place and impact the size of your hourglass :-), 
+you ended up using it so your comment no longer applies. But I'd recommend naming it something a little more helpful in the future.
+0/2 pts Extra Credit 
+
+25/25 total points
+#goodGrade!
+
+*/
 /*
 write main method
 	The main method should include:
